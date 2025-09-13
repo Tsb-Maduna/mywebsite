@@ -17,13 +17,6 @@
 				color: #212529;
 			}
 		</style>
-		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-		<script type="text/javascript">
-			(function(){
-				emailjs.init("oTcGjpPvGzMjhnLXQ"); // Replace with your EmailJS Public Key
-			})();
-		</script>
-
 	</head>
 	<body class = "container d-flex flex-column min-vh-100" style = "padding-top : 70px;">
 		<!-- Navbar -->
@@ -61,25 +54,7 @@
 			</div>
 		</nav>
 		<div class = "container d-flex flex-column justify-content-center align-items-center text-center flex-grow-1">
-			<h2 class = "text-center mb-4"><em> Contact Me </em></h2>
-			<form id="contactForm">
-				<div class="mb-3">
-				  <label for="name" class="form-label">Your Name</label>
-				  <input type="text" class="form-control" id="name" name="from_name" placeholder="Enter your name" required>
-				</div>
-
-				<div class="mb-3">
-				  <label for="email" class="form-label">Email address</label>
-				  <input type="email" class="form-control" id="email" name="reply_to" placeholder="name@example.com" required>
-				</div>
-
-				<div class="mb-3">
-				  <label for="message" class="form-label">Message</label>
-				  <textarea class="form-control" id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
-				</div>
-
-				<button type="submit" class="btn btn-primary">Send</button>
-			</form>
+			<em><h1>Page to be completed soon!</h1></em>
 		</div>
 		<footer class = "text-center">
 			&copy; 2025 Tsebang Maduna. All rights reserved.
@@ -115,23 +90,5 @@
 			}
   }
 		</script>
-		<!--Form-->
-		<script>
-			document.getElementById("contactForm").addEventListener("submit", function(e) {
-				e.preventDefault();
-
-				emailjs.sendForm("service_y47mb93", "template_ejizqrl", this)
-				.then(() => {
-					document.getElementById("formStatus").innerHTML =
-					'<div class="alert alert-success">✅ Message sent successfully!</div>';
-					this.reset();
-				}, (error) => {
-					document.getElementById("formStatus").innerHTML =
-					'<div class="alert alert-danger">❌ Failed to send message. Try again.</div>';
-					console.error("EmailJS Error:", error);
-				});
-			});
-		</script>
-
 	</body>
 </html>
