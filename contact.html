@@ -17,6 +17,8 @@
 				color: #212529;
 			}
 		</style>
+		<!-- To be Removed -->
+		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 	</head>
 	<body class = "container d-flex flex-column min-vh-100" style = "padding-top : 70px;">
 		<!-- Navbar -->
@@ -54,7 +56,20 @@
 			</div>
 		</nav>
 		<div class = "container d-flex flex-column justify-content-center align-items-center text-center flex-grow-1">
-			<em><h1>Page to be completed soon!</h1></em>
+			<!-- To be Removed -->
+			<h2 class="text-center mt-5">
+				 <span id="typed-text"></span>
+			</h2>
+			<em>
+				<script>
+					new Typed('#typed-text', {
+						strings: ["Page is to be completed..."], // your texts
+						typeSpeed: 100,
+						backSpeed: 70,
+						loop: true
+					});
+				</script>
+			</em>
 		</div>
 		<footer class = "text-center">
 			&copy; 2025 Tsebang Maduna. All rights reserved.
