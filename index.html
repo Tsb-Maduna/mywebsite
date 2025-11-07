@@ -6,24 +6,16 @@
 		<title> Maduna - Portfolio </title>
 		<link rel = "stylesheet" href = "js/bootstrap.js">
 		<link rel = "stylesheet" href = "css/bootstrap.min.css">
-		<!-- Theme style -->
-		<style>
-			body[data-bs-theme="dark"] {
-				background-color: #121212;
-				color: #f8f9fa;
-			}
-			body[data-bs-theme="light"] {
-				background-color: #ffffff;
-				color: #212529;
-			}
-		</style>
+		<link rel = "stylesheet" href = "css/mystyle.css">
+		<link rel = "stylesheet" href = "fa/css/all.min.css">
+		<script src = "js/mytyped.js"></script>
 	</head>
-	<body class = "container d-flex flex-column min-vh-100" style = "padding-top : 70px;">
+	<body class = "container d-flex flex-column min-vh-100">
 		<!-- Navbar -->
 		<nav class = "navbar navbar-expand-lg bg-body-tertiary fixed-top">
 			<div class = "container">
 				<!-- Brand -->
-				<a class = "navbar-brand" href = "index.html">T.Maduna</a>
+				<a class = "navbar-brand" href = "index.html"> Maduna </a>
 				
 				<!-- Toggler button -->
 				<button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navbarNav" aria-controls = "navbarNav" aria-expanded = "false" aria-label = "Toggle navigation">
@@ -54,47 +46,37 @@
 			</div>
 		</nav>
 		<div class = "container d-flex flex-column justify-content-center align-items-center text-center flex-grow-1">
-			<h1 class = "mb-3">Tsebang Maduna</h1>
-			<h4 class = "mb-4 text-muted"><em> Turning ideas into code.</em></h4>
-			<p class = "lead">
-				Hi, I'm a Computer Science & Mathematics student with a passion for coding, problem-solving, and building practical digital solutions.
-				My portfolio showcases projects where I explore software development, design, and security, as I grow into a well-rounded IT professional.
+			<h1 class = "mb-2 fs-l">Tsebang Maduna</h1>
+			<p class="text-center mt-2 lead">
+				<h3 class = "fs-m"><em><span id="welcome"></span></em></h3>
+				<h4 class = "text-muted fs-1"><em> Where I'm turning ideas into code!</em></h4>
+				<h7 class = "fs-2"><em>You’re here to see my worth in gold, my journey as a computer scientist,
+				my explorations across different fields, and a little bit of who I am.<br>
+				Enjoy your visit!</em></h7>
 			</p>
 			<a href = "projects.html" class = "btn btn-primary mt-3">Explore My Work</a>
 		</div>
+		
+		<div Class = "container d-flex justify-content-center align-items-center text-center flex-grow-1 cnt">
+			<a href = "https://www.linkedin.com/in/tsebangmaduna" target = "_blank">
+				<li class = "fa fab fa-linkedin fa-2x"></li>
+			</a>
+			<a href = "mailto:tsebangmaduna6@gmail.com" target = "_blank">
+				<li class = "fa fas fa-envelope fa-2x"></li>
+			</a>
+			<a href = "https://wa.me/27836281406" target = "_blank">
+				<li class = "fa fab fa-whatsapp fa-2x"></li>
+			</a>
+			<a href = "tel:+27836281406" target = "_blank">
+				<li class = "fa fas fa-phone fa-2x"></li>
+			</a>
+		</div>
+		
 		<footer class = "text-center">
 			&copy; 2025 Tsebang Maduna. All rights reserved.
 		</footer>
 		
 		<script src = "js/bootstrap.bundle.min.js"></script>
-		<script>
-			const toggleBtn = document.getElementById("themeToggle");
-			const body = document.body;
-
-			// Load saved theme or default to light
-			const savedTheme = localStorage.getItem("theme") || "light";
-			body.setAttribute("data-bs-theme", savedTheme);
-			updateButton(savedTheme);
-
-			// Handle toggle
-			toggleBtn.addEventListener("click", () => {
-				let currentTheme = body.getAttribute("data-bs-theme");
-				let newTheme = currentTheme === "light" ? "dark" : "light";
-				body.setAttribute("data-bs-theme", newTheme);
-				localStorage.setItem("theme", newTheme);
-				updateButton(newTheme);
-			});
-
-			// Update button text and style
-			function updateButton(theme) {
-			if (theme === "dark") {
-				toggleBtn.textContent = "☀️ Light Mode";
-				toggleBtn.classList.replace("btn-outline-secondary", "btn-light");
-			} else {
-				toggleBtn.textContent = "🌙 Dark Mode";
-				toggleBtn.classList.replace("btn-light", "btn-outline-secondary");
-			}
-  }
-		</script>
+		<script src = "js/custom.js"></script>
 	</body>
 </html>

@@ -6,26 +6,16 @@
 		<title> Maduna - Project Details </title>
 		<link rel = "stylesheet" href = "js/bootstrap.js">
 		<link rel = "stylesheet" href = "css/bootstrap.min.css">
-		<!-- Theme style -->
-		<style>
-			body[data-bs-theme="dark"] {
-				background-color: #121212;
-				color: #f8f9fa;
-			}
-			body[data-bs-theme="light"] {
-				background-color: #ffffff;
-				color: #212529;
-			}
-		</style>
-		<!-- To be Removed -->
-		<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+		<link rel = "stylesheet" href = "css/mystyle.css">
+		<link rel = "stylesheet" href = "fa/css/all.min.css">
+		<script src = "js/mytyped.js"></script>
 	</head>
 	<body class = "container d-flex flex-column min-vh-100" style = "padding-top : 70px;">
 		<!-- Navbar -->
 		<nav class = "navbar navbar-expand-lg bg-body-tertiary fixed-top">
 			<div class = "container">
 				<!-- Brand -->
-				<a class = "navbar-brand" href = "index.html">T.Maduna</a>
+				<a class = "navbar-brand" href = "index.html"> Maduna </a>
 				
 				<!-- Toggler button -->
 				<button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navbarNav" aria-controls = "navbarNav" aria-expanded = "false" aria-label = "Toggle navigation">
@@ -59,54 +49,13 @@
 			</div>
 		</nav>
 		<div class = "container d-flex flex-column justify-content-center align-items-center text-center flex-grow-1">
-			<!-- To be Removed -->
-			<h2 class="text-center mt-5">
-				 <span id="typed-text"></span>
-			</h2>
-			<em>
-				<script>
-					new Typed('#typed-text', {
-						strings: ["Page is to be completed..."], // your texts
-						typeSpeed: 100,
-						backSpeed: 70,
-						loop: true
-					});
-				</script>
-			</em>
+			
 		</div>
 		<footer class = "text-center">
 			&copy; 2025 Tsebang Maduna. All rights reserved.
 		</footer>
 		
 		<script src = "js/bootstrap.bundle.min.js"></script>
-		<script>
-			const toggleBtn = document.getElementById("themeToggle");
-			const body = document.body;
-
-			// Load saved theme or default to light
-			const savedTheme = localStorage.getItem("theme") || "light";
-			body.setAttribute("data-bs-theme", savedTheme);
-			updateButton(savedTheme);
-
-			// Handle toggle
-			toggleBtn.addEventListener("click", () => {
-				let currentTheme = body.getAttribute("data-bs-theme");
-				let newTheme = currentTheme === "light" ? "dark" : "light";
-				body.setAttribute("data-bs-theme", newTheme);
-				localStorage.setItem("theme", newTheme);
-				updateButton(newTheme);
-			});
-
-			// Update button text and style
-			function updateButton(theme) {
-			if (theme === "dark") {
-				toggleBtn.textContent = "☀️ Light Mode";
-				toggleBtn.classList.replace("btn-outline-secondary", "btn-light");
-			} else {
-				toggleBtn.textContent = "🌙 Dark Mode";
-				toggleBtn.classList.replace("btn-light", "btn-outline-secondary");
-			}
-  }
-		</script>
+		<script src = "js/custom.js"></script>
 	</body>
 </html>

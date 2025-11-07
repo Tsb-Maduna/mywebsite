@@ -1,0 +1,90 @@
+/*
+*Custom styles
+*/
+/************************************************************  MEDIA SIZES  **************************************************/
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+    padding: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/***************************************************************************************************************************/
+
+/************************************************************  FONT SIZES  **************************************************/
+.fs-l{
+	font-size: 5rem;
+}
+
+.fs-m{
+	font-size: 3rem;
+}
+
+/***************************************************************************************************************************/
+body[data-bs-theme="dark"] {
+	background-color: #0000ff;
+	color: #ffffff;
+}
+body[data-bs-theme="light"] {
+	background-color: #F8FAFC;
+	color: #111827;
+}
+	
+body {
+	padding-top: 70px;
+	background-color: #f8f9fa;
+	border-radius: 6px;
+}
+
+ .card {
+	border-radius: 12px;
+}
+
+.btn-primary {
+	background: #1e1e1e;
+	border: none;
+}
+
+.btn-primary:hover {
+	background: #b8ff66;
+	color: #111827;
+	border-radius: 4px;
+	font-size:2rem;
+}
+
+body[data-bs-theme="dark"] .nav-link:hover {
+	background: #b8ff66;
+	color: #111827;
+	border-radius: 4px;
+}
+
+body[data-bs-theme="light"] .nav-link:hover {
+	background: #1E293B;
+	color: #F3F4F6;
+	border-radius: 4px;
+}
+
+
+
+body[data-bs-theme="dark"] .fa {
+	color: #ffffff;
+	margin: 2px;
+	border-radius: 4px;
+}
+
+body[data-bs-theme="dark"] .fa:hover {
+	color: #000000;
+	margin: 2px;
+	border-radius: 4px;
+}
+
+body[data-bs-theme="dark"] .cnt {
+	background: #b8ff66;
+	border-radius: 6px;
+}
