@@ -1,7 +1,10 @@
 /*
-*Custom styles
+===========================================================  Custom styles  ===========================================================|
+		Greated By  : Maduna Tsebang
+		Date		: 06 November 2025
+		Purpose		: Custom Style Sheet{Css} for Portfolio website
 */
-/************************************************************  MEDIA SIZES  **************************************************/
+/**********************************************************  MEDIA SIZES  *************************************************/
 
 @media (max-width: 768px) {
   body {
@@ -17,7 +20,7 @@
 
 /***************************************************************************************************************************/
 
-/************************************************************  FONT SIZES  **************************************************/
+/************************************************************  FONT SIZES  *************************************************/
 .fs-l{
 	font-size: 5rem;
 }
@@ -27,41 +30,12 @@
 }
 
 /***************************************************************************************************************************/
-body[data-bs-theme="dark"] {
-	background-color: #0000ff;
-	color: #ffffff;
-}
+
+/***********************************************************  LIGHT MODE  **************************************************/
+
 body[data-bs-theme="light"] {
 	background-color: #F8FAFC;
 	color: #111827;
-}
-	
-body {
-	padding-top: 70px;
-	background-color: #f8f9fa;
-	border-radius: 6px;
-}
-
- .card {
-	border-radius: 12px;
-}
-
-.btn-primary {
-	background: #1e1e1e;
-	border: none;
-}
-
-.btn-primary:hover {
-	background: #b8ff66;
-	color: #111827;
-	border-radius: 4px;
-	font-size:2rem;
-}
-
-body[data-bs-theme="dark"] .nav-link:hover {
-	background: #b8ff66;
-	color: #111827;
-	border-radius: 4px;
 }
 
 body[data-bs-theme="light"] .nav-link:hover {
@@ -70,7 +44,26 @@ body[data-bs-theme="light"] .nav-link:hover {
 	border-radius: 4px;
 }
 
+/***************************************************************************************************************************/
 
+/***********************************************************  DARK MODE  ***************************************************/
+
+body[data-bs-theme="dark"] {
+	background-color: #0000ff;
+	color: #ffffff;
+}
+
+body[data-bs-theme="dark"] .nav-link:hover {
+	background: #b8ff66;
+	color: #111827;
+	border-radius: 4px;
+}
+
+body[data-bs-theme="dark"] .active {
+	background: #b8ff66;
+	color: #111827;
+	border-radius: 4px;
+}
 
 body[data-bs-theme="dark"] .fa {
 	color: #ffffff;
@@ -88,3 +81,45 @@ body[data-bs-theme="dark"] .cnt {
 	background: #b8ff66;
 	border-radius: 6px;
 }
+
+body[data-bs-theme="dark"] .btn-primary:hover {
+	background: #b8ff66;
+	color: #111827;
+	border-radius: 4px;
+	font-size:1.5rem;
+}
+
+/***************************************************************************************************************************/
+
+
+
+
+	
+body {
+	padding-top: 70px;
+	background-color: #f8f9fa;
+	border-radius: 6px;
+}
+
+ .card {
+	border-radius: 12px;
+}
+
+.btn-primary {
+	background: #1e1e1e;
+	border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
