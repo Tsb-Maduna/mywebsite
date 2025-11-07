@@ -6,7 +6,7 @@ console.log("Custom script loaded!");
 
 
 //------------------------------------------  ANIMATION  -----------------------------------------------------//
-	const Cwelcome = document.querySelector('#welcom');
+	const Cwelcome = document.querySelector('#welcome');
 	if(Cwelcome){
 		new Typed('#welcome', {
 			strings: ["Welcome to my Canvas"], // your texts
