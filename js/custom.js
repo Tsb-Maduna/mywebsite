@@ -21,7 +21,7 @@ console.log("Custom script loaded!");
 			strings: ["Maduna"], // my texts
 			typeSpeed: 200,
 			backSpeed: 30,
-			loop: false,
+			loop: true,
 			showCursor: false
 		});
 	}

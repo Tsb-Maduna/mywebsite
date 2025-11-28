@@ -3,7 +3,8 @@
 		Greated By  : Maduna Tsebang
 		Date		: 06 November 2025
 		Purpose		: Custom Style Sheet{Css} for Portfolio website
-*/
+		Modified    : 23 November 2025
+
 /**********************************************************  MEDIA SIZES  *************************************************/
 
 @media (max-width: 768px) {
@@ -94,7 +95,7 @@ body[data-bs-theme="dark"] .btn-primary:hover {
 
 
 
-	
+
 body {
 	padding-top: 70px;
 	background-color: #f8f9fa;
@@ -110,15 +111,20 @@ body {
 	border: none;
 }
 
+.accordion-button {
+  background-color: white !important;
+  color: black !important;
+  box-shadow: none !important; 
+}
 
+.accordion-button::after {
+  transition: transform 0.2s ease;
+  transform: rotate(0deg); 
+}
 
-
-
-
-
-
-
-
+.accordion-button.collapsed::after {
+  transform: rotate(-90deg);
+}
 
 
 

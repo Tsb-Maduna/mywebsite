@@ -8,14 +8,14 @@
 		<link rel = "stylesheet" href = "css/bootstrap.min.css">
 		<link rel = "stylesheet" href = "css/mystyle.css">
 		<link rel = "stylesheet" href = "fa/css/all.min.css">
-		<script src = "js/mytyped.js" defer></script>
+		<script src = "js/mytyped.js"></script>
 	</head>
 	<body class = "container d-flex flex-column min-vh-100">
 		<!-- Navbar -->
 		<nav class = "navbar navbar-expand-lg bg-body-tertiary fixed-top">
 			<div class = "container">
 				<!-- Brand -->
-				<a class = "navbar-brand" href = "index.html"> Maduna </a>
+				<a class = "navbar-brand" href = "index.html"><span id="brand"></span></a>
 				
 				<!-- Toggler button -->
 				<button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navbarNav" aria-controls = "navbarNav" aria-expanded = "false" aria-label = "Toggle navigation">
@@ -49,13 +49,81 @@
 			<h1 class = "mb-3 fs-l">About Me</h1>
 			<h4 class = "mb-4 text-muted fs-1"><em> Turning ideas into code, and challenges into opportunities.</em></h4>
 			<p class = "lead">
-				I'm a motivated student with a passion for building <em>creative and practical solutions</em> through code. 
-				I enjoy exploring different areas of tech from <em>design and development</em> to <em>problem-solving and security</em>.
-				My journey is driven by curiosity and a love for learning,and I'm always looking for opportunities to grow my skills and take on new challenges.				
+				I'm Tsebang Maduna, a Computer Sciences and Mathematics student at the University of the Free State, with a passion for building creative and practical solutions through code. 
+				I am eager to make a real impact in individuals everyday lives through my solutions, and to make impactful contributions in the IT field.
+				My journey is driven by curiosity and a love for learning, I'm always looking for opportunities to grow my skills and take on new challenges.				
 			</p>
-			<h5 class = "mb-4 text-muted"><em> Let's Work Together!</em></h5>
-			<a href = "contact.html" class = "btn btn-primary mt-3">Contact Me</a>
+			<h5 class = "mb-4 text-muted"><em> Working with You would be a pleasure!</em></h5>
+			<div class = "accordion container-fluid" id = "about">
+				<div class = "accordion-item">
+					<h2 class = "accordion-header" id = "education">
+						<button class = "accordion-button" type = "button" data-bs-toggle = "collapse" data-bs-target = "#educollapse">
+							Education
+						</button>
+					</h2>
+					<div class = "accordion-collapse collapse" data-bs-parent = "#about" id = "educollapse">
+						<div class = "accordion-body">
+							<div class = "container-fluid card ">
+								<div class = "card-body">
+									<dl class = "row">
+										<dt class = "col-sm-12 "> Course: </dt>
+										<dd class = "col-sm-12 "> BSc Information Technology (Computer Science & Mathematics) </dd>
+										
+										<dt class = "col-sm-12"> Institution: </dt>
+										<dd class = "col-sm-12"> University of the Free State </dd>
+										
+										<dt class = "col-sm-12"> Year of Study: </dt>
+										<dd class = "col-sm-12"> 2nd Year (Currently Studying) </dd>
+									</dl>
+									
+									<div class = "accordion container-fluid" id = "Coursework">
+										<div class = "accordion-item">
+											<h2 class = "accordion-header" id = "cw">
+												<button class = "accordion-button" type = "button" data-bs-toggle = "collapse" data-bs-target = "#educol">
+													Course Work:
+												</button>
+											</h2>
+											<div class = "accordion-collapse collapse" data-bs-parent = "#Coursework" id = "educol">
+												<div class = "accordion-body">
+													<div class = "container-fluid card ">
+														<div class = "card-body">
+															<ul class = "content-center">
+																<li> Web Development </li>
+																<li> Data Structures & Algorithms </li>
+																<li> Software Design </li>
+																<li> Calculus </li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<a href = "contact.html" class = "btn btn-primary m-3">Contact Me</a>
 		</div>
+		
+		<div Class = "container d-flex justify-content-center align-items-center text-center flex-grow-1 cnt">
+			<a href = "https://www.linkedin.com/in/tsebangmaduna" target = "_blank">
+				<li class = "fa fab fa-linkedin fa-2x"></li>
+			</a>
+			<a href = "mailto:tsebangmaduna6@gmail.com" target = "_blank">
+				<li class = "fa fas fa-envelope fa-2x"></li>
+			</a>
+			<a href = "https://wa.me/27836281406" target = "_blank">
+				<li class = "fa fab fa-whatsapp fa-2x"></li>
+			</a>
+			<a href = "tel:+27836281406" target = "_blank">
+				<li class = "fa fas fa-phone fa-2x"></li>
+			</a>
+		</div>
+		
 		<footer class = "text-center">
 			&copy; 2025 Tsebang Maduna. All rights reserved.
 		</footer>

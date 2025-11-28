@@ -6,24 +6,16 @@
 		<title> Maduna - Projects </title>
 		<link rel = "stylesheet" href = "js/bootstrap.js">
 		<link rel = "stylesheet" href = "css/bootstrap.min.css">
-		<!-- Theme style -->
-		<style>
-			body[data-bs-theme="dark"] {
-				background-color: #1E1E1E;
-				color: #EEE;
-			}
-			body[data-bs-theme="light"] {
-				background-color: #F8F8F8;
-				color: #111;
-			}
-		</style>
+		<link rel = "stylesheet" href = "css/mystyle.css">
+		<link rel = "stylesheet" href = "fa/css/all.min.css">
+		<script src = "js/mytyped.js"></script>
 	</head>
-	<body class = "container d-flex flex-column min-vh-100" style = "padding-top : 70px;">
+	<body class = "container d-flex flex-column min-vh-100">
 		<!-- Navbar -->
 		<nav class = "navbar navbar-expand-lg bg-body-tertiary fixed-top">
 			<div class = "container">
 				<!-- Brand -->
-				<a class = "navbar-brand" href = "index.html">T.Maduna</a>
+				<a class = "navbar-brand" href = "index.html"><span id="brand"></span></a>
 				
 				<!-- Toggler button -->
 				<button class = "navbar-toggler" type = "button" data-bs-toggle = "collapse" data-bs-target = "#navbarNav" aria-controls = "navbarNav" aria-expanded = "false" aria-label = "Toggle navigation">
@@ -97,34 +89,6 @@
 		</footer>
 		
 		<script src = "js/bootstrap.bundle.min.js"></script>
-		<script>
-			const toggleBtn = document.getElementById("themeToggle");
-			const body = document.body;
-
-			// Load saved theme or default to light
-			const savedTheme = localStorage.getItem("theme") || "light";
-			body.setAttribute("data-bs-theme", savedTheme);
-			updateButton(savedTheme);
-
-			// Handle toggle
-			toggleBtn.addEventListener("click", () => {
-				let currentTheme = body.getAttribute("data-bs-theme");
-				let newTheme = currentTheme === "light" ? "dark" : "light";
-				body.setAttribute("data-bs-theme", newTheme);
-				localStorage.setItem("theme", newTheme);
-				updateButton(newTheme);
-			});
-
-			// Update button text and style
-			function updateButton(theme) {
-			if (theme === "dark") {
-				toggleBtn.textContent = "☀️ Light Mode";
-				toggleBtn.classList.replace("btn-outline-secondary", "btn-light");
-			} else {
-				toggleBtn.textContent = "🌙 Dark Mode";
-				toggleBtn.classList.replace("btn-light", "btn-outline-secondary");
-			}
-  }
-		</script>
+		<script src = "js/custom.js"></script>
 	</body>
 </html>
