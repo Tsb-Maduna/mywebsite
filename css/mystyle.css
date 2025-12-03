@@ -111,6 +111,12 @@ body[data-bs-theme="dark"] .btn-primary:hover {
   padding-left: 0;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
 /***************************************************************************************************************************/
 
 body {
