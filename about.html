@@ -55,7 +55,7 @@
 			</p>
 			<h5 class = "mb-4 text-muted"><em> Working with You would be a pleasure!</em></h5>
 			<div class = "accordion container-fluid" id = "about">
-				<div class = "accordion-item">
+				<div class = "accordion-item">				
 					<h2 class = "accordion-header" id = "education">
 						<button class = "accordion-button" type = "button" data-bs-toggle = "collapse" data-bs-target = "#educollapse">
 							Education
@@ -63,8 +63,8 @@
 					</h2>
 					<div class = "accordion-collapse collapse" data-bs-parent = "#about" id = "educollapse">
 						<div class = "accordion-body">
-							<div class = "container-fluid card ">
-								<div class = "card-body">
+							<div class = "container-fluid card bg-light">
+								<div class = "card-body text-dark">
 									<dl class = "row">
 										<dt class = "col-sm-12 "> Course: </dt>
 										<dd class = "col-sm-12 "> BSc Information Technology (Computer Science & Mathematics) </dd>
@@ -76,26 +76,40 @@
 										<dd class = "col-sm-12"> 2nd Year (Currently Studying) </dd>
 									</dl>
 									
-									<div class = "accordion container-fluid" id = "Coursework">
-										<div class = "accordion-item">
-											<h2 class = "accordion-header" id = "cw">
-												<button class = "accordion-button" type = "button" data-bs-toggle = "collapse" data-bs-target = "#educol">
-													Course Work:
-												</button>
-											</h2>
-											<div class = "accordion-collapse collapse" data-bs-parent = "#Coursework" id = "educol">
-												<div class = "accordion-body">
-													<div class = "container-fluid card ">
-														<div class = "card-body">
-															<ul class = "content-center">
-																<li> Web Development </li>
-																<li> Data Structures & Algorithms </li>
-																<li> Software Design </li>
-																<li> Calculus </li>
-															</ul>
-														</div>
-													</div>
+									<button type = "button" class = "btn btn-primary" data-bs-toggle = "modal" data-bs-target = "#cwork">
+										Course Work
+									</button>
+
+									<div class="modal fade" id="cwork" tabindex="-1">
+										<div class="modal-dialog modal-dialog-centered">
+											<div class="modal-content bg-dark">
+
+												<div class="modal-header">
+													<h5 class="modal-title text-light">Course Work</h5>
+													<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 												</div>
+
+												<div class="modal-body text-light">
+													<ul class = "content-center no-dots">
+														<li> Programming & Problem Solving </li>
+														<li> Computer Hardware </li>
+														<li> Web Development </li>
+														<li> Data Structures & Algorithms </li>
+														<li> Software Design </li>
+														<li> Calculus & Algebra</li>
+														<li> Mathematical Modeling </li>
+														<li> Advanced Mathematics </li>
+														<li> Human-Computer Interaction </li>
+														<li> Computer Literacy </li>
+													</ul>
+												</div>
+
+												<div class="modal-footer">
+													<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+														Close
+													</button>
+												</div>
+
 											</div>
 										</div>
 									</div>
@@ -105,6 +119,110 @@
 						</div>
 					</div>
 				</div>
+			
+				<div class = "accordion-item">
+				
+					<h2 class = "accordion-header" id = "focusA">
+						<button class = "accordion-button" type = "button" data-bs-toggle = "collapse" data-bs-target = "#focuscollapse">
+							Focus Areas
+						</button>
+					</h2>
+					<div class = "accordion-collapse collapse" data-bs-parent = "#about" id = "focuscollapse">
+						<div class = "accordion-body">
+							<div class = "container-fluid card bg-light">
+								<div class = "card-body text-dark">
+									<h4 class = "card-title"> Focus Areas: </h4>
+									<dl class = "row">
+										<ul class = "content-center no-dots">
+											<li> Web Development </li>
+											<li> UI/UX Fundermentals </li>
+											<li> Algorithms </li>
+										</ul>
+									</dl>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class = "accordion-item">
+				
+					<h2 class = "accordion-header" id = "skillsT">
+						<button class = "accordion-button" type = "button" data-bs-toggle = "collapse" data-bs-target = "#skillscollapse">
+							Skills & Technologies
+						</button>
+					</h2>
+					<div class = "accordion-collapse collapse" data-bs-parent = "#about" id = "skillscollapse">
+						<div class = "accordion-body">
+							<div class = "container-fluid card bg-light">
+								<div class = "card-body text-dark">
+									<h4 class = "card-title"> Skills & Technologies: </h4>
+									<dl class = "row">
+										<ul class = "content-center no-dots">
+											<li> HTML </li>
+											<li> CSS </li>
+											<li> JavaScript </li>
+											<li> Bootstrap </li>
+											<li> Fontawesome </li>
+											<li> C# </li>
+										</ul>
+									</dl>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class = "accordion-item">
+				
+					<h2 class = "accordion-header" id = "frmw">
+						<button class = "accordion-button" type = "button" data-bs-toggle = "collapse" data-bs-target = "#frmwcollapse">
+							Frameworks & Tools
+						</button>
+					</h2>
+					<div class = "accordion-collapse collapse" data-bs-parent = "#about" id = "frmwcollapse">
+						<div class = "accordion-body">
+							<div class = "container-fluid card bg-light">
+								<div class = "card-body text-dark">
+									<dl class = "row">
+										<ul class = "content-center no-dots">
+											<li> GitHub </li>
+											<li> Notepad++ </li>
+											<li> Visual Studio 2022 </li>
+										</ul>
+									</dl>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<div class = "accordion-item">
+				
+					<h2 class = "accordion-header" id = "curr">
+						<button class = "accordion-button" type = "button" data-bs-toggle = "collapse" data-bs-target = "#currcollapse">
+							Currently Learning
+						</button>
+					</h2>
+					<div class = "accordion-collapse collapse" data-bs-parent = "#about" id = "currcollapse">
+						<div class = "accordion-body">
+							<div class = "container-fluid card bg-light">
+								<div class = "card-body text-dark">
+									<dl class = "row">
+										<ul class = "content-center no-dots">
+											<li> Working on improving my JavaScript </li>
+										</ul>
+									</dl>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			
 			</div>
 			<a href = "contact.html" class = "btn btn-primary m-3">Contact Me</a>
 		</div>
